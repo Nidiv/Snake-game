@@ -1,6 +1,6 @@
-/* body {
-  background-color: #d3d3d3;
-} */
+body {
+  background-color: #f0f0f0;
+}
 
 #gameContainer {
   text-align: center;
@@ -21,7 +21,7 @@ h1 {
 
 #scoreText {
   font-family: "Bangers", cursive;
-  font-size: 100px;
+  font-size: 50px;
 }
 
 #resetBtn {

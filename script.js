@@ -4,10 +4,10 @@ const scoreText = document.querySelector("#scoreText");
 const resetBtn = document.querySelector("#resetBtn");
 const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
-const boardBackground = "white";
-const snakeColor = "lightGreen";
+const boardBackground = "lightgreen";
+const snakeColor = "#2E86C1";
 const snakeBorder = "black";
-const foodColor = "red";
+const foodColor = "#E74C3C";
 const unitSize = 25;
 let running = false;
 let xVelocity = unitSize;
@@ -24,7 +24,7 @@ let snake = [
 ];
 
 window.addEventListener("keydown", changeDirection);
-// resetBtn.addEventListener("click", resetGame);
+resetBtn.addEventListener("click", resetGame);
 
 gameStart();
 function gameStart() {
@@ -146,7 +146,7 @@ function displayGameOver() {
   ctx.font = "50px MV Boli";
   ctx.fillStyle = "black";
   ctx.textAlign = "center";
-  ctx.fillText("GAME OVER!", gameWidth / 2, gameHeight / 2);
+  ctx.fillText("GAME OVER! :(", gameWidth / 2, gameHeight / 2);
   running = false;
 }
 function resetGame() {
